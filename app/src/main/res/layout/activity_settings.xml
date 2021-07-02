@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="horizontal"
+    >
+
+    <ImageButton
+        android:id="@+id/buttonRepeatFirst"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRepeatSecond"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_repeat_first_states" />
+
+    <ImageButton
+        android:id="@+id/buttonRepeatSecond"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRepeatThird"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonRepeatFirst"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_repeat_second_states" />
+
+    <ImageButton
+        android:id="@+id/buttonRepeatFourth"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRepeatFifth"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonRepeatThird"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_repeat_fourth_states" />
+
+    <ImageButton
+        android:id="@+id/buttonRepeatThird"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRepeatFourth"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonRepeatSecond"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_repeat_third_states" />
+
+    <ImageButton
+        android:id="@+id/buttonRepeatFifth"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonRepeatFourth"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_repeat_fifth_states" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBackToMain"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/task"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_back_states" />
+</androidx.constraintlayout.widget.ConstraintLayout>
